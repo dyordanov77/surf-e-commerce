@@ -1,17 +1,14 @@
+/* Body Style */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Navigation Style */
 #black-line {
   width: 100%;
   height: 46px;
   background-color: #252525;
-}
-
-body {
-  margin: 0;
-  font-family: Inter, sans-serif;
-}
-
-#shop-name {
-  font-size: 1.25rem;
-  font-weight: bold;
 }
 
 nav {
@@ -22,6 +19,11 @@ nav {
   list-style-type: none;
   display: flex;
   gap: 48px;
+}
+
+#shop-name {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .icons {
