@@ -58,7 +58,6 @@ nav {
 .button {
   width: 155px;
   height: 44px;
-  padding: 12px 28px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -77,4 +76,56 @@ nav {
   border-radius: 100px;
   border: 1.5px solid #6b7280;
   background-color: transparent;
+}
+
+/* Main Content Style */
+#landing-page {
+  height: 600px;
+  background-image: url("/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-content {
+  margin-top: -100px;
+}
+.hero-buttons {
+  display: flex;
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.top-line {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 200;
+  line-height: 15px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  font-style: normal;
+  letter-spacing: 0.32px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  font-style: normal;
+  text-transform: uppercase;
 }
