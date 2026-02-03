@@ -96,7 +96,7 @@ nav {
 }
 
 .hero-content {
-  margin-top: -100px;
+  margin-top: -180px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,23 +145,30 @@ h2 {
 
 .new-collection {
   display: grid;
+  place-items: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: auto; /* ChatGPT advised setting rows to auto to make margin spacing easier */
   padding: 56px 125px;
 }
 
 .title {
-  grid-column: span 3 / span 3;
+  grid-column: span 3;
   text-align: center;
   font-size: 32px;
+  margin-bottom: 24px;
   height: 39px;
 }
 
 .description {
-  grid-column: span 3 / span 3;
+  grid-column: span 3;
   grid-row-start: 2;
   font-size: 18px;
   text-align: center;
+}
+
+.description p {
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 .card1 {
@@ -177,4 +184,29 @@ h2 {
 .card3 {
   grid-row: span 3 / span 3;
   grid-row-start: 3;
+}
+
+.card1 h3,
+.card2 h3,
+.card3 h3 {
+  margin: 16px 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+  width: 243px;
+}
+
+.card1 h4,
+.card2 h4,
+.card3 h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  width: 29px;
+}
+
+card1,
+card2,
+card3 {
+  text-align: center;
+  margin: auto;
 }
