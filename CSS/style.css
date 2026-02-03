@@ -134,3 +134,48 @@ h2 {
   font-style: normal;
   text-transform: uppercase;
 }
+
+/* Product Cards Style */
+.card1 img,
+.card2 img,
+.card3 img {
+  width: 330px;
+  height: 400px;
+}
+
+.new-collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  padding: 56px 125px;
+}
+
+.title {
+  grid-column: span 3 / span 3;
+  text-align: center;
+  font-size: 32px;
+  height: 39px;
+}
+
+.description {
+  grid-column: span 3 / span 3;
+  grid-row-start: 2;
+  font-size: 18px;
+  text-align: center;
+  height: 44px;
+}
+
+.card1 {
+  grid-row: span 3 / span 3;
+  grid-row-start: 3;
+}
+
+.card2 {
+  grid-row: span 3 / span 3;
+  grid-row-start: 3;
+}
+
+.card3 {
+  grid-row: span 3 / span 3;
+  grid-row-start: 3;
+}
