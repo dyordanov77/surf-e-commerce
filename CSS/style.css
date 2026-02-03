@@ -210,3 +210,8 @@ card3 {
   text-align: center;
   margin: auto;
 }
+
+/* Newsletter Section Style */
+.newsletter {
+  background-color: rgba(193, 191, 204, 0.5);
+}
