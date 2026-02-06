@@ -11,6 +11,11 @@ body {
   background-color: #252525;
 }
 
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
 nav {
   font-size: 1rem;
 }
@@ -214,13 +219,14 @@ card3 {
 /* Newsletter Section Style */
 .newsletter {
   background-color: rgba(193, 191, 204, 0.5);
+  height: 400px;
+  align-content: center;
 }
 
 .newsletter-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .newsletter-content h2 {
@@ -228,7 +234,42 @@ card3 {
   font-weight: 600;
 }
 
+.newsletter-content p {
+  font-size: 18px;
+  text-align: center;
+}
+
 #subscribe-button {
   border-radius: 20px;
   background: #395352;
+  color: #ffffff;
+}
+
+input {
+  height: 44px;
+  width: 333px;
+  background-color: transparent;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  margin-top: 18px;
+}
+
+/* Footer Style */
+
+#footer-name,
+#footer-links {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  background-color: #494949;
+  color: #f4f4f4;
+  padding: 0 124px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto; /* ChatGPT advised setting rows to auto to make margin spacing easier */
+  padding: 56px 125px;
 }
