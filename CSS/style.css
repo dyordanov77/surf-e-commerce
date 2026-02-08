@@ -255,12 +255,12 @@ input {
   border-left: 0px;
   border-right: 0px;
   margin-top: 18px;
-  color: #252525;
+  border-color: black;
 }
 
 /* Footer Style */
 
-#footer-name,
+.footer-name,
 #footer-links {
   display: flex;
   flex-direction: row;
@@ -269,10 +269,32 @@ input {
 footer {
   background-color: #494949;
   color: #f4f4f4;
-  padding: 0 124px;
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto; /* ChatGPT advised setting rows to auto to make margin spacing easier */
   padding: 56px 125px;
+
+  display: grid;
+  grid-template-columns: auto 123px auto;
+  align-items: start;
+}
+
+.footer-name h3 {
+  margin-bottom: 8px;
+}
+
+.footer-name {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-name h3,
+.footer-name p {
+  margin: 0;
+}
+
+#footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 64px;
+
+  justify-self: end;
 }
