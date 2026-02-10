@@ -140,12 +140,33 @@ h2 {
   text-transform: uppercase;
 }
 
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  grid-area: 1 / 1;
+}
+
+.heart-outline {
+  grid-area: 1 / 1;
+  justify-self: end;
+  align-self: start;
+  margin: 12px;
+  width: 1.6rem;
+  z-index: 2;
+}
+
 /* Product Cards Style */
-.card1 img,
-.card2 img,
-.card3 img {
+.card1,
+.card2,
+.card3 {
+  display: block;
   width: 330px;
-  height: 400px;
 }
 
 .new-collection {
