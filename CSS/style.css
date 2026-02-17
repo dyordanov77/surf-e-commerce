@@ -237,6 +237,12 @@ card3 {
   margin: auto;
 }
 
+.product-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Newsletter Section Style */
 .newsletter {
   background-color: rgba(193, 191, 204, 0.5);
@@ -411,4 +417,10 @@ footer {
   top: 10px;
   right: 10px;
   width: 25px;
+}
+
+.product-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
