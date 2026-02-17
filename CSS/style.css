@@ -401,3 +401,14 @@ footer {
   margin: 0px;
   font-weight: 300;
 }
+
+.img-container {
+  position: relative;
+}
+
+.heart-outline2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+}
