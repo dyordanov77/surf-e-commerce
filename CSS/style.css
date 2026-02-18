@@ -455,7 +455,7 @@ footer {
 
 /* GRIDDDDDDD */
 
-.parent {
+.parent2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
@@ -530,7 +530,7 @@ footer {
 .div-2 {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 #add-to-cart-btn {
@@ -601,7 +601,7 @@ footer {
 }
 
 .product-size {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .sizes {
@@ -624,9 +624,21 @@ footer {
   cursor: pointer;
 }
 
-.div-3 h2 {
+.div-3 h3 {
   margin-top: 56px;
   margin-bottom: 16px;
   font-size: 24px;
   font-weight: 600;
+}
+
+#product h3 {
+  font-size: 18px;
+  margin: 8px 0 4px 0;
+  font-weight: 600;
+}
+
+#product h4 {
+  font-size: 18px;
+  margin: 0px;
+  font-weight: 300;
 }
