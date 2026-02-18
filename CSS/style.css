@@ -460,6 +460,7 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 8px;
+  padding: 95px 125px;
 }
 
 .div-1 {
@@ -471,11 +472,15 @@ footer {
   grid-column: span 2 / span 2;
   grid-row: span 5 / span 5;
   grid-column-start: 3;
+  align-self: flex-start;
 }
 
 .div-3 {
-  grid-column: span 4 / span 4;
-  grid-row-start: 6;
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-items: start;
+  padding-left: 0;
 }
 
 .div-4 {
@@ -496,4 +501,132 @@ footer {
 .div-7 {
   grid-row: span 3 / span 3;
   grid-row-start: 7;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-info h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.product-info h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.product-info p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.div-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#add-to-cart-btn {
+  border-radius: 6px;
+  background: #395352;
+  color: #ffffff;
+  width: 402px;
+  height: 60px;
+  font-size: 24px;
+}
+
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+#favs {
+  width: 26px;
+  height: 24px;
+  padding: 16px;
+  border: #000 solid 1.5px;
+  border-radius: 6px;
+}
+
+.product-colours h4 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #252525;
+}
+
+.colour-option {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.colours {
+  display: flex;
+  gap: 12px;
+}
+
+#red {
+  background-color: #5d2a24;
+}
+
+#gray {
+  background-color: #d7d3d2;
+}
+
+#blue {
+  background-color: #1c2e3e;
+}
+
+#beige {
+  background-color: #998b75;
+}
+
+.product-size h4 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #252525;
+}
+
+.product-size {
+  margin-bottom: 48px;
+}
+
+.sizes {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.size-option {
+  width: 40px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #222;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 500;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.div-3 h2 {
+  margin-top: 56px;
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
 }
