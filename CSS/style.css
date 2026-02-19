@@ -658,3 +658,16 @@ h4 {
   border-radius: 6px;
   cursor: pointer;
 }
+
+/* CART */
+.cart {
+  position: fixed;
+  top: 0;
+  width: 400px;
+  height: 100vh;
+  background: white;
+}
+
+.active {
+  display: none;
+}
