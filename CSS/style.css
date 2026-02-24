@@ -2,13 +2,12 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  /* width: fit-content; */
 }
 
 /* Navigation Style */
 #black-line {
   width: 100%;
-  height: 46px;
+  height: 2.8rem;
   background-color: #252525;
 }
 
@@ -24,7 +23,7 @@ nav {
 .nav-links {
   list-style-type: none;
   display: flex;
-  gap: 48px;
+  gap: 3rem;
 }
 
 #shop-name {
@@ -34,59 +33,55 @@ nav {
 
 .icons {
   display: flex;
-  gap: 32px;
 }
 
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 7.75rem;
+  height: 3.1rem;
+  background-color: #f4f4f4;
 }
 
 .icons img {
-  width: 21px;
-  height: 21px;
-  padding: 20, 20, 20, 20;
-}
-
-.header-content {
-  padding: 0 124px;
-  height: 50px;
-  background-color: #f4f4f4;
+  width: 1.3rem;
+  height: 1.3rem;
+  padding: 1.25rem;
 }
 
 #background-image {
   width: 100%;
-  height: 600px;
+  height: 37.5rem;
 }
 
 /* Buttons Style */
 .button {
-  width: 155px;
-  height: 44px;
+  width: 9.6rem;
+  height: 2.75rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 10px;
-  font-size: 18px;
+  gap: 0.6rem;
+  font-size: 1.125rem;
 }
 
 #CTA {
-  border-radius: 100px;
-  border: 1px solid #073946;
+  border-radius: 6.25rem;
+  border: 0.06rem solid #073946;
   background: #395352;
   color: #ffffff;
 }
 
 #secondary {
-  border-radius: 100px;
-  border: 1.5px solid #6b7280;
+  border-radius: 6.25rem;
+  border: 0.09rem solid #6b7280;
   background-color: transparent;
 }
 
 /* Main Content Style */
 #landing-page {
-  height: 600px;
+  height: 37.5rem;
   background-image: url("/images/background.png");
   background-size: cover;
   background-position: center;
@@ -96,45 +91,45 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 0.3rem;
   text-align: center;
   text-transform: uppercase;
 }
 
 .hero-content {
-  margin-top: -180px;
+  margin-top: -11.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 0.3rem;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 20px;
-  margin-top: 28px;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
 }
 
 .top-line {
   margin: 0;
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: 0.75rem;
+  letter-spacing: 0.125rem;
   font-weight: 200;
-  line-height: 15px;
+  line-height: 0.9rem;
 }
 
 h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 39px;
+  line-height: 2.4rem;
   font-style: normal;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02rem;
 }
 
 h2 {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: normal;
   font-style: normal;
@@ -157,7 +152,7 @@ h2 {
   grid-area: 1 / 1;
   justify-self: end;
   align-self: start;
-  margin: 12px;
+  margin: 0.75rem;
   width: 1.6rem;
   z-index: 2;
 }
@@ -167,47 +162,39 @@ h2 {
 .card2,
 .card3 {
   display: block;
-  width: 330px;
+  width: 20.6rem;
 }
 
 .new-collection {
   display: grid;
   place-items: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto; /* ChatGPT advised setting rows to auto to make margin spacing easier */
-  padding: 56px 125px;
+  grid-template-rows: auto;
+  padding: 3.5rem 7.8125rem;
 }
 
 .title {
   grid-column: span 3;
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 24px;
-  height: 39px;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  height: 2.4375rem;
 }
 
 .description {
   grid-column: span 3;
   grid-row-start: 2;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: center;
 }
 
 .description p {
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
-.card1 {
-  grid-row: span 3 / span 3;
-  grid-row-start: 3;
-}
-
-.card2 {
-  grid-row: span 3 / span 3;
-  grid-row-start: 3;
-}
-
+.card1,
+.card2,
 .card3 {
   grid-row: span 3 / span 3;
   grid-row-start: 3;
@@ -216,19 +203,19 @@ h2 {
 .card1 h3,
 .card2 h3,
 .card3 h3 {
-  margin: 16px 0 8px 0;
-  font-size: 24px;
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.5rem;
   font-weight: 600;
-  width: 243px;
+  width: 15.18rem;
 }
 
 .card1 h4,
 .card2 h4,
 .card3 h4 {
   margin: 0;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 300;
-  width: 29px;
+  width: 1.8125rem;
 }
 
 card1,
@@ -247,10 +234,10 @@ card3 {
 /* Newsletter Section Style */
 .newsletter {
   background-color: rgba(193, 191, 204, 0.5);
-  height: 400px;
+  height: 25rem;
   display: flex;
-  justify-content: center; /* vertical */
-  align-items: center; /* horizontal */
+  justify-content: center;
+  align-items: center;
 }
 
 .newsletter-content {
@@ -260,34 +247,33 @@ card3 {
 }
 
 .newsletter-content h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .newsletter-content p {
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: center;
 }
 
 #subscribe-button {
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background: #395352;
   color: #ffffff;
 }
 
 input {
-  height: 44px;
-  width: 333px;
+  height: 2.75rem;
+  width: 20.8rem;
   background-color: transparent;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  margin-top: 18px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-top: 1.125rem;
   border-color: black;
 }
 
 /* Footer Style */
-
 .footer-name,
 #footer-links {
   display: flex;
@@ -297,21 +283,21 @@ input {
 footer {
   background-color: #494949;
   color: #f4f4f4;
-  padding: 56px 125px;
+  padding: 3.5rem 7.8rem;
 
   display: grid;
-  grid-template-columns: auto 123px auto;
+  grid-template-columns: auto 7.6rem auto;
   align-items: start;
 }
 
 .footer-name h3 {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .footer-name {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .footer-name h3,
@@ -322,32 +308,31 @@ footer {
 #footer-links {
   display: grid;
   grid-template-columns: repeat(3, max-content);
-  gap: 64px;
-
+  gap: 4rem;
   justify-self: end;
 }
 
 /* Products Page */
 .products-img {
-  width: 247px;
-  height: 296px;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
+  width: 15.4rem;
+  height: 18.5rem;
+  border-top-right-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
 }
 
 .parent {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  gap: 36px;
-  padding: 32px 125px;
+  gap: 2.25rem;
+  padding: 2rem 7.8rem;
   place-items: center;
 }
 
 .our-products {
   grid-column: span 4;
   text-align: center;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -392,20 +377,20 @@ footer {
 }
 
 .products-img h3 {
-  margin-top: 12px;
-  font-size: 18px;
+  margin-top: 0.75rem;
+  font-size: 1.125rem;
   font-weight: 600;
 }
 
 .parent h3 {
-  font-size: 18px;
-  margin: 8px 0 4px 0;
+  font-size: 1.125rem;
+  margin: 0.5rem 0 0.25rem 0;
   font-weight: 600;
 }
 
 .parent h4 {
-  font-size: 18px;
-  margin: 0px;
+  font-size: 1.125rem;
+  margin: 0;
   font-weight: 300;
 }
 
@@ -415,9 +400,9 @@ footer {
 
 .heart-outline2 {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 25px;
+  top: 0.6rem;
+  right: 0.6rem;
+  width: 1.5rem;
 }
 
 .product-card {
@@ -429,27 +414,27 @@ footer {
 /* Product Details Page */
 /* Product Photos*/
 #main-photo {
-  width: 350px;
-  height: 445px;
+  width: 21.8rem;
+  height: 27.8rem;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 0.3rem;
 }
 
 .div-1 {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .photos {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .photos img {
-  width: 135px;
-  height: 135px;
-  border-radius: 6px;
+  width: 8.4rem;
+  height: 8.4rem;
+  border-radius: 0.3rem;
   object-fit: cover;
   display: block;
 }
@@ -460,8 +445,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  gap: 8px;
-  padding: 95px 125px;
+  gap: 0.5rem;
+  padding: 5.9rem 7.8rem;
 }
 
 .div-1 {
@@ -474,6 +459,9 @@ footer {
   grid-row: span 5 / span 5;
   grid-column-start: 3;
   align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .div-3 {
@@ -507,75 +495,69 @@ footer {
 .product-info {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .product-info h2 {
   margin: 0;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .product-info h3 {
   margin: 0;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
 .product-info p {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
 }
 
-.div-2 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
 #add-to-cart-btn {
-  border-radius: 6px;
+  border-radius: 0.3rem;
   background: #395352;
   color: #ffffff;
-  width: 402px;
-  height: 60px;
-  font-size: 24px;
+  width: 25.1rem;
+  height: 3.75rem;
+  font-size: 1.5rem;
 }
 
 .add-to-cart {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 #favs {
-  width: 26px;
-  height: 24px;
-  padding: 16px;
-  border: #000 solid 1.5px;
-  border-radius: 6px;
+  width: 1.6rem;
+  height: 1.5rem;
+  padding: 1rem;
+  border: 0.09rem solid #000;
+  border-radius: 0.3rem;
 }
 
 .product-colours h4 {
-  margin-bottom: 4px;
-  font-size: 16px;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #252525;
 }
 
 .colour-option {
   display: inline-flex;
-  width: 40px;
-  height: 40px;
-  border-radius: 6px;
-  gap: 12px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+  gap: 0.75rem;
   cursor: pointer;
 }
 
 .colours {
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 #red {
@@ -595,52 +577,52 @@ footer {
 }
 
 .product-size h4 {
-  margin-bottom: 4px;
-  font-size: 16px;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #252525;
 }
 
 .product-size {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .sizes {
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
   align-items: center;
 }
 
 .size-option {
-  width: 40px;
+  width: 2.5rem;
   aspect-ratio: 1 / 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #222;
-  border-radius: 6px;
-  font-size: 20px;
+  border: 0.06rem solid #222;
+  border-radius: 0.3rem;
+  font-size: 1.25rem;
   font-weight: 500;
   box-sizing: border-box;
   cursor: pointer;
 }
 
 .div-3 h3 {
-  margin-top: 56px;
-  margin-bottom: 16px;
-  font-size: 24px;
+  margin-top: 3.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 18px;
-  margin: 8px 0 4px 0;
+  font-size: 1.125rem;
+  margin: 0.5rem 0 0.25rem 0;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 18px;
-  margin: 0px;
+  font-size: 1.125rem;
+  margin: 0;
   font-weight: 300;
 }
 
@@ -651,12 +633,12 @@ h4 {
 
 .heart-outline2 {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 24px;
-  height: 22px;
-  padding: 6px;
-  border-radius: 6px;
+  top: 0.6rem;
+  right: 0.6rem;
+  width: 1.5rem;
+  height: 1.3rem;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
   cursor: pointer;
 }
 
@@ -664,7 +646,7 @@ h4 {
 .cart {
   position: fixed;
   top: 0;
-  width: 400px;
+  width: 25rem;
   height: 100vh;
   background: white;
 }
