@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/CSS/nav_footer.css" />
+    <script src="/JS/script.js" defer></script>
 
     <title>WaveThread</title>
   </head>
@@ -39,10 +40,20 @@
             ><img src="/images/account.png" alt="User Account Icon"
           /></a>
           <a href="#"><img src="/images/favs.png" alt="Favourites Icon" /></a>
-          <a href="#"><img src="/images/cart.png" alt="Cart Icon" /></a>
+          <a href="#" id="cartIcon"
+            ><img src="/images/cart.png" alt="Cart Icon"
+          /></a>
         </div>
       </div>
     </header>
+
+    <div class="cart" id="cart">
+      <h2>Your Cart</h2>
+      <div class="cart-items">
+        <p>No products yet</p>
+      </div>
+      <button class="viewCart">View cart ()</button>
+    </div>
 
     <main>
       <div class="parent">
