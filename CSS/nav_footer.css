@@ -43,3 +43,42 @@ nav {
   height: 1.3rem;
   padding: 1.25rem;
 }
+
+/* Footer Style */
+.footer-name,
+#footer-links {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  background-color: #494949;
+  color: #f4f4f4;
+  padding: 3.5rem 7.8rem;
+
+  display: grid;
+  grid-template-columns: auto 7.6rem auto;
+  align-items: start;
+}
+
+.footer-name h3 {
+  margin-bottom: 0.5rem;
+}
+
+.footer-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-name h3,
+.footer-name p {
+  margin: 0;
+}
+
+#footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 4rem;
+  justify-self: end;
+}
