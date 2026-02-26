@@ -120,3 +120,18 @@ function renderCart() {
 }
 
 renderCart(); // Initial render of cart items on page load
+
+// HAMBURGER MENU LOGIC
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("mobileMenu");
+
+function openHamburger() {
+  navMenu.style.display = "block";
+}
+
+function closeHamburger() {
+  navMenu.style.display = "none";
+}
+
+hamburger.addEventListener("click", openHamburger);
+hamburger.addEventListener("mouseleave", closeHamburger);
