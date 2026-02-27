@@ -1,6 +1,6 @@
-/* ============= */
-/* PRODUCTS PAGE */
-/* ============= */
+/* ================== */
+/* PRODUCTS PAGE GRID */
+/* ================== */
 
 .products-img {
   width: 100%;
@@ -110,6 +110,10 @@
   text-decoration: none;
   color: inherit;
 }
+
+/* ================= */
+/* RESPONSIVE DESIGN */
+/* ================= */
 
 /* HEART & TEXT BREAKPOINT #1 */
 @media screen and (max-width: 1225px) {
