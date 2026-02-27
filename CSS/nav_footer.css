@@ -282,6 +282,7 @@ footer {
     position: absolute;
     align-items: end;
     right: 3rem;
+    z-index: 9999;
   }
 
   .mobile-menu ul {

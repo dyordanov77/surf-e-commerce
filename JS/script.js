@@ -1,18 +1,3 @@
-// CART HOVER LOGIC
-const cartButton = document.getElementById("cartIcon");
-const cart = document.getElementById("cart");
-
-function openCart() {
-  cart.style.display = "block";
-}
-
-function closeCart() {
-  cart.style.display = "none";
-}
-
-cartButton.addEventListener("mouseenter", openCart);
-cart.addEventListener("mouseleave", closeCart);
-
 // COLOUR CHOICE LOGIC
 const colourOptions = document.querySelectorAll(".colour-option");
 let selectedColour = null;
@@ -119,18 +104,3 @@ function renderCart() {
 }
 
 renderCart(); // Initial render of cart items on page load
-
-// HAMBURGER MENU LOGIC
-const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("mobileMenu");
-
-function openHamburger() {
-  navMenu.style.display = "block";
-}
-
-function closeHamburger() {
-  navMenu.style.display = "none";
-}
-
-hamburger.addEventListener("click", openHamburger);
-hamburger.addEventListener("mouseleave", closeHamburger);
