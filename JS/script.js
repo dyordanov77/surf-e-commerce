@@ -106,7 +106,6 @@ function renderCart() {
 
     cartContainer.appendChild(itemDiv);
 
-    // STEP 2 — Attach the listener directly here
     const removeBtn = itemDiv.querySelector(".remove-btn");
     removeBtn.addEventListener("click", function () {
       // remove this item
