@@ -1,4 +1,6 @@
-/* Navigation Style */
+/* ================ */
+/* NAVIGATION STYLE */
+/* ================ */
 #black-line {
   width: 100%;
   height: 2.8rem;
@@ -52,7 +54,9 @@ nav {
   display: none;
 }
 
-/* Footer Style */
+/* ================ */
+/* FOOTER STYLE */
+/* ================ */
 .footer-name,
 #footer-links {
   display: flex;
@@ -91,8 +95,11 @@ footer {
   justify-self: end;
 }
 
+/* ================= */
 /* RESPONSIVE DESIGN */
+/* ================= */
 
+/* FIRST BREAKPOINT */
 @media screen and (max-width: 1125px) {
   /* Nav Style */
   #black-line {
@@ -168,6 +175,7 @@ footer {
   }
 }
 
+/* SECOND BREAKPOINT */
 @media screen and (max-width: 940px) {
   #black-line {
     width: 100%;
@@ -242,6 +250,7 @@ footer {
   }
 }
 
+/* THIRD BREAKPOINT */
 @media screen and (max-width: 810px) {
   #black-line {
     width: 100%;
