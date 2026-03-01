@@ -1,14 +1,16 @@
-// HAMBURGER MENU LOGIC
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("mobileMenu");
 
-function openHamburger() {
-  navMenu.style.display = "block";
-}
+navMenu.style.display = "none";
 
-function closeHamburger() {
+hamburger.addEventListener("click", () => {
+  if (navMenu.style.display === "none") {
+    navMenu.style.display = "block";
+  } else {
+    navMenu.style.display = "none";
+  }
+});
+
+navMenu.addEventListener("mouseleave", () => {
   navMenu.style.display = "none";
-}
-
-hamburger.addEventListener("click", openHamburger);
-navMenu.addEventListener("mouseleave", closeHamburger);
+});
