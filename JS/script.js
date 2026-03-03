@@ -28,7 +28,8 @@ sizeOptions.forEach((option) => {
   });
 });
 
-let cartItems = JSON.parse(localStorage.getItem("cart")) || []; // Load previous cart items if exist
+let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+renderCart();
 
 // ADD TO CART BUTTON
 const addToCartButton = document.getElementById("add-to-cart-btn");
@@ -62,6 +63,8 @@ function renderCart() {
   const cartContainer = document.querySelector(".cart-items");
   const cartCountBtn = document.querySelector(".viewCart");
 
+  if (!cartContainer || !cartCountBtn) return;
+
   cartContainer.innerHTML = "";
 
   if (cartItems.length === 0) {
@@ -94,7 +97,7 @@ function renderCart() {
     const removeBtn = itemDiv.querySelector(".remove-btn");
     removeBtn.addEventListener("click", function () {
       // remove this item
-      cartItems = cartItems.filter((cartItem) => cartItem.id !== item.id);
+      cartItems = cartItems.filter((cartItem) => cartItem.id !== item.id); // ChatGPT suggestion: filter out the item with the matching ID
       localStorage.setItem("cart", JSON.stringify(cartItems));
       renderCart(); // re-render cart
     });
