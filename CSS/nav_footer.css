@@ -299,13 +299,35 @@ footer {
     display: flex;
     flex-direction: column;
     font-size: 0.9rem;
-    gap: 1.5rem;
     background-color: #f4f4f4;
     margin: 0px;
     align-items: center;
-    padding: 0 3rem 1rem 3rem;
+    padding: 0;
     width: 15rem;
   }
+
+  .mobile-menu li {
+    width: 100%;
+  }
+
+  .mobile-menu li a {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    text-decoration: none;
+    color: #252525;
+    transition: background-color 0.3s ease;
+  }
+
+  .mobile-menu li a:hover {
+    background-color: #e0e0e0;
+  }
+
+  .mobile-menu li a:active {
+    background-color: #e0e0e0;
+  }
+
   /* Footer Style */
   footer {
     display: flex;
