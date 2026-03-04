@@ -1,0 +1,158 @@
+.cart-page {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+.cart-page-item {
+  display: flex;
+  gap: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding: 1.5rem 0;
+  align-items: center;
+}
+
+.cart-page-item img {
+  width: 120px;
+  height: auto;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.remove-btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #252525;
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.cart-summary {
+  margin-top: 3rem;
+  text-align: right;
+}
+
+#checkout-btn {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  background: #395352;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5rem;
+}
+
+/* ================= */
+/* RESPONSIVE DESIGN */
+/* ================= */
+
+/* FIRST BREAKPOINT */
+@media screen and (max-width: 1125px) {
+  .cart-page {
+    max-width: 900px;
+    padding: 2rem 1.5rem;
+  }
+
+  .cart-page-item {
+    gap: 1.5rem;
+  }
+
+  .cart-page-item img {
+    width: 110px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+}
+
+/* SECOND BREAKPOINT */
+@media screen and (max-width: 940px) {
+  .cart-page {
+    max-width: 700px;
+  }
+
+  .cart-page-item {
+    gap: 1.2rem;
+  }
+
+  .cart-page-item img {
+    width: 95px;
+  }
+
+  .item-info h3 {
+    font-size: 1rem;
+  }
+
+  .item-info p {
+    font-size: 0.9rem;
+  }
+
+  .remove-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .cart-summary {
+    margin-top: 2rem;
+  }
+}
+
+/* THIRD BREAKPOINT */
+@media screen and (max-width: 810px) {
+  .cart-page {
+    padding: 1.5rem 2.5rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .cart-page-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .cart-page-item img {
+    width: 85px;
+    flex-shrink: 0;
+  }
+
+  .item-info {
+    flex: 1;
+  }
+
+  .item-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .item-info p {
+    font-size: 0.8rem;
+  }
+
+  .remove-btn {
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+    align-self: flex-start;
+  }
+
+  .cart-summary {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  #checkout-btn {
+    width: 100%;
+  }
+}

@@ -14,8 +14,9 @@
 
     <link rel="stylesheet" href="/CSS/main.css" />
     <link rel="stylesheet" href="/CSS/nav_footer.css" />
-    <link rel="stylesheet" href="/CSS/mainGrids.css" />
     <link rel="stylesheet" href="/CSS/cart.css" />
+    <link rel="stylesheet" href="/CSS/cartPage.css" />
+    <script src="/JS/cartPage.js" defer></script>
     <script src="/JS/script.js" defer></script>
     <script src="/JS/hamburger.js" defer></script>
     <script src="/JS/cartPop.js" defer></script>
@@ -46,7 +47,9 @@
         </nav>
 
         <div class="icons">
-          <a href="#"><img src="/images/search.png" alt="Search Icon" /></a>
+          <a href="#"
+            ><img src="/images/search.png" alt="Search Icon" class="search"
+          /></a>
           <a href="#"
             ><img src="/images/account.png" alt="User Account Icon"
           /></a>
@@ -78,74 +81,14 @@
       <button class="viewCart">View cart ()</button>
     </div>
 
-    <!-- GRID -->
-    <main>
-      <div class="parent">
-        <div class="our-products">Our Products</div>
-        <a href="product.html" class="div2 product-card">
-          <div class="img-container">
-            <img class="products-img" src="images/main_product_1.png" />
-            <img class="heart-outline2" src="/images/favvs.png" />
-          </div>
-          <h3>The Plan is No Plans</h3>
-          <h4>$19.99</h4>
-        </a>
-        <div class="div3">
-          <div class="img-container">
-            <img class="products-img" src="/images/product-1.png" />
-            <img class="heart-outline2" src="/images/favvs.png" />
-          </div>
-          <h3>Surfing Great Waves</h3>
-          <h4>24,99$</h4>
-        </div>
-        <div class="div4">
-          <div class="img-container">
-            <img class="products-img" src="/images/product-2.png" />
-            <img class="heart-outline2" src="/images/favvs.png" />
-          </div>
-          <h3>Catch The Wave</h3>
-          <h4>19,99$</h4>
-        </div>
-        <div class="div5">
-          <div class="img-container">
-            <img class="products-img" src="/images/product-3.png" />
-            <img class="heart-outline2" src="/images/favvs.png" />
-          </div>
-          <h3>Surf Locos Club</h3>
-          <h4>19,99$</h4>
-        </div>
-        <div class="div6">
-          <div class="img-container">
-            <img class="products-img" src="/images/product-4.png" />
-            <img class="heart-outline2" src="/images/favvs.png" />
-          </div>
-          <h3>Shaggy Fish Fest</h3>
-          <h4>22,99$</h4>
-        </div>
-        <div class="div7">
-          <div class="img-container">
-            <img class="products-img" src="/images/product-5.png" />
-            <img class="heart-outline2" src="/images/favvs.png" />
-          </div>
-          <h3>Good Time</h3>
-          <h4>24,99$</h4>
-        </div>
-        <div class="div8">
-          <div class="img-container">
-            <img class="products-img" src="/images/product-6.png" />
-            <img class="heart-outline2" src="/images/favvs.png" />
-          </div>
-          <h3>Surf Locos</h3>
-          <h4>16,99$</h4>
-        </div>
-        <div class="div9">
-          <div class="img-container">
-            <img class="products-img" src="/images/product-7.png" />
-            <img class="heart-outline2" src="/images/favvs.png" />
-          </div>
-          <h3>Mykonos</h3>
-          <h4>19,99$</h4>
-        </div>
+    <main class="cart-page">
+      <h1>Your Shopping Cart</h1>
+
+      <div id="cart-items-container"></div>
+
+      <div class="cart-summary">
+        <h2>Total: <span id="cart-total">$0.00</span></h2>
+        <button id="checkout-btn">Proceed to Checkout</button>
       </div>
     </main>
 

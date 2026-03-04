@@ -107,3 +107,11 @@ function renderCart() {
 }
 
 renderCart(); // Initial render of cart items on page load
+
+const viewCartBtn = document.querySelector(".viewCart");
+
+if (viewCartBtn) {
+  viewCartBtn.addEventListener("click", () => {
+    window.location.href = "cart.html";
+  });
+}
