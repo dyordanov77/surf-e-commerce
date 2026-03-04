@@ -36,7 +36,7 @@ body {
 /* Main Content Style */
 #landing-page {
   height: 37.5rem;
-  background-image: url("../images/background.png");
+  background-image: url("../images/background.png"); /* background image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
